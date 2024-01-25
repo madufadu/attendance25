@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('lpc-hall.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(7, 78, 19, 0.5); /* Change to a solid color (non-transparent) */
+    padding: 2em; /* Smaller padding for a shorter header */
+    text-align: left;
+}
+
+nav {
+    float: left; /* Float the navigation to the left */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-button {
+    float: right; /* Float the login button to the right */
+    margin-top: -29px; /* Adjust the margin for better alignment */
+    background-color: #4caf50;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left; /* Float the logo to the left */
+    margin-right: 20px; /* Adjust the margin for spacing */
+}
+
+.logo img {
+    height: 150px; /* Adjust the height of the logo as needed */
+}
+/* ... (rest of the CSS remains unchanged) */
+.header-content {
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Ensure there is no additional line-height */
+}
+/* Style the dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,353 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('lpc-hall.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(7, 78, 19, 0.5); /* Change to a solid color (non-transparent) */
+    padding: 2em; /* Smaller padding for a shorter header */
+    text-align: left;
+}
+
+nav {
+    float: left; /* Float the navigation to the left */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-button {
+    float: right; /* Float the login button to the right */
+    margin-top: -29px; /* Adjust the margin for better alignment */
+    background-color: #4caf50;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left; /* Float the logo to the left */
+    margin-right: 20px; /* Adjust the margin for spacing */
+}
+
+.logo img {
+    height: 150px; /* Adjust the height of the logo as needed */
+}
+/* ... (rest of the CSS remains unchanged) */
+.header-content {
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Ensure there is no additional line-height */
+}
+/* Style the dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-bar {
+    background: #08744a;
+    padding: 10px 0px 50px 15px;
+    border-radius: 8px;
+    width: 86px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: width 400ms ease;
+  }
+  .task-pane {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .brand-icon {
+    margin-bottom: 25px;
+    padding-left: 17px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    .fab {
+      margin-right: 15px;
+    }
+    .brand-text {
+      opacity: 0;
+    }
+  }
+  
+  .search-bar {
+    margin-bottom: 15px;
+    padding: 12px;
+    padding-left: 17px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: all 600ms ease;
+    .fa-search {
+      width: 35px;
+      font-size: 20px;
+    }
+    input {
+      border: 0;
+      outline: 0;
+      width: calc(100% - 42px);
+      font-size: 15px;
+      color: #020202;
+      background: transparent;
+      opacity: 0;
+      position: absolute;
+      transition: all 400ms ease;
+      &::placeholder {
+        color: #000000;
+      }
+    }
+  }
+  
+  .nav-links {
+    padding-right: 15px;
+    .nav-link {
+      padding: 12px;
+      padding-left: 17px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.4s ease;
+      display: flex;
+      align-items: center;
+      .fas,
+      .far {
+        width: 35px;
+        font-size: 20px;
+        margin-left: 2px;
+      }
+  
+      &:hover {
+        background: #000000;
+      }
+  
+      .nav-link-name {
+        display: inline-block;
+        font-size: 15px;
+        position: absolute;
+        margin-left: 40px;
+        white-space: nowrap;
+        opacity: 0;
+      }
+    }
+  }
+  
+  .arrow {
+    background: #0da96d;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: -18px;
+    top: 94px;
+    cursor: pointer;
+    transition: transform 400ms ease;
+  }
+  
+  .nav-bar {
+    &.extended {
+      width: 250px;
+  
+      .arrow {
+        transform: rotate(0.5turn);
+        transition: all 100ms ease;
+      }
+  
+      .brand-text {
+        opacity: 1;
+        transition: all 3s ease;
+      }
+  
+    
+  
+      input {
+        opacity: 1;
+        transition: all 3s ease;
+      }
+  
+      .nav-link-name {
+        opacity: 1;
+        transition: all 3s ease;
+      }
+  
+    }
+  }
+  
+  button {
+    font-size: 18px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  }
+  
+  button:before {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+    z-index: -1;
+    background-color: #008542 !important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset,
+      0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset,
+      4px 0 rgb(21 108 0 / 50%) inset;
+  }
+  
+  button:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  }
+  
+  button:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset,
+      -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+  }
+  
+  button:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  }
+  
+  button:active {
+    transform: translateY(4px);
+  }
+  
+  button:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+  }
+  
+.card {
+    width: 260px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .chat-window {
+    height: 220px;
+    overflow-y: scroll;
+  }
+  
+  .message-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .message-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .send-button {
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }

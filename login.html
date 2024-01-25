@@ -1,0 +1,60 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login - Office of the City Engineer</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Las_Piñas_City_seal.png" alt="City Seal Logo">
+        </div>
+        <div class="header-content">
+            <h1>Office of the City Engineer</h1>
+            <h3>City Hall of Las Piñas</h3>
+            <h3>Alabang-Zapote Rd, Las Piñas City, 1740</h3>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="card-switch">
+            <label class="switch">
+               <input class="toggle" type="checkbox">
+               <span class="slider"></span>
+               <span class="card-side"></span>
+               <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                     <div class="title">Employee</div>
+                     <form action="employeehomepage.html" class="flip-card__form"> 
+                        <input type="email" placeholder="Employee ID" name="email" class="flip-card__input">
+                        <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                        <a href="employeehomepage.html">
+                        <button class="flip-card__btn">Login</button></a>
+                     </form>
+                  </div>
+                  <div class="flip-card__back">
+                     <div class="title">Admin</div>
+                     <form action="admin.html" class="flip-card__form">
+                        <input type="name" placeholder="Admin ID" class="flip-card__input">
+                        <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                        <a href="homepage.html">
+                        <button class="flip-card__btn">Login</button>
+                        
+                        </a>
+                     </form>
+                  </div>
+               </div>
+            </label>
+        </div>   
+   </div>
+        <a class="back-button" href="home.html">Back</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Office of the City Engineer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
